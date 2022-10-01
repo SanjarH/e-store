@@ -7,3 +7,4 @@
   3. Developing URLs and Views
   4. Develop & Testing Views
   5. Make it work
+  6. Enjoy it
