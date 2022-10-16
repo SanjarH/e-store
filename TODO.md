@@ -7,7 +7,8 @@ This document represents a plan for a project. Feel free to add any information 
 - [ ] contributor_information_view
 - [ ] about_us_view
 ### Templates
-- [ ] 
+- [x] layout.html (Dmytro - DONE(add changes if needed))
+- [x] index.html (Dmytro - IN PROGRESS)
 ### Static
 - [ ]
 ### Admin
@@ -51,15 +52,15 @@ This document represents a plan for a project. Feel free to add any information 
 ## Create App 'users'
 ### Views
 - [ ] account_view
-- [ ] login_view
-- [ ] logout_view
+- [x] login_view (Dmytro - DONE)
+- [x] logout_view (Dmytro - DONE)
 - [ ] register_view
 ### Models
 - [ ] User
 ### Forms
 - [ ] RegisterForm
 ### Templates
-- [ ]
+- [ ] login.html (Dmytro - DONE(add changes if needed))
 ### Static
 - [ ]
 ### Admin
