@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-
+from users.forms import RegisterForm
 
 def login_view(request):
     if request.method == "POST":
@@ -29,6 +31,9 @@ def logout_view(request):
     return HttpResponseRedirect(reverse("users:index"))
 
 
-def register(request):
-    pass
+def register_view(request):
+    form = RegisterForm()
+    context = {'form': form}  
+    return render (request,"users/register.html", context)
+   
     # TODO registration View

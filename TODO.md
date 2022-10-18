@@ -16,8 +16,8 @@ This document represents a plan for a project. Feel free to add any information 
 
 ## Create App 'products'
 ### Views
-- [ ] add_product_view
-- [ ] remove_product_view
+- [X] add_product_view(Sanjar - IN PRGORESS)
+- [X] remove_product_view(Sanjar - IN PRGORESS)
 - [ ] edit_product_view
 - [ ] product_detail_view
 - [ ] product_list_view
@@ -55,14 +55,14 @@ This document represents a plan for a project. Feel free to add any information 
 - [ ] account_view
 - [x] login_view (Dmytro - DONE)
 - [x] logout_view (Dmytro - DONE)
-- [ ] register_view
+- [x] register_view(Sanjar - DONE(will update))
 ### Models
 - [ ] User (only if adding changes to Django User Model)
 ### Forms
-- [ ] RegisterForm
+- [x] RegisterForm(Sanjar - DONE)
 ### Templates
 - [x] login.html (Dmytro - DONE(add changes if needed))
-- [ ] register.html
+- [x] register.html(Sanjar - DONE(will update))
 ### Static
 - [ ]
 ### Admin

@@ -1,0 +1,21 @@
+{% extends "pages/layout.html" %}
+{% block body %}
+
+<h2>Register</h2>
+
+<br/>
+
+    <form action="{% url 'users:register' %}" method="POST">
+        {% csrf_token %}
+        
+		{{form}}
+
+<br/><br/>
+   
+   <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+    Already have an account? <a href="{% url 'users:login' %}">Login here.</a>
+
+{% endblock %}
+
