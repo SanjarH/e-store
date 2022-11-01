@@ -43,7 +43,7 @@ def register_view(request):
             password = form.cleaned_data['password1']
             user = authenticate(username=username,email=email, password=password)
             login(request,user)
-            messages.success(request, ('Register was successfull'))
+            messages.success(request, 'Register was successfull')
             return redirect("pages:index")
     else:
         form = RegisterForm()   
