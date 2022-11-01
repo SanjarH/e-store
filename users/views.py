@@ -45,7 +45,7 @@ def register_view(request):
             user = authenticate(username=username, email=email, password=password)
             login(request, user)
             messages.success(request, ('Register was successfull'))
-            return redirect("pages:index")
+            return redirect("users:register")
     else:
         form = RegisterForm()   
             

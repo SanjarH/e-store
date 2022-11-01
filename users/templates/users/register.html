@@ -1,5 +1,6 @@
 {% extends "pages/layout.html" %}
 {% block body %}
+
 {% if form.errors %}
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>There was error with form</strong> You should check in on some of those fields below.
@@ -9,16 +10,13 @@
   </div>
   {% endif %}
 
-  {% if messages %}
-  <ul class="messages">
-      {% for message in messages %}
-      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-          {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
-          {{ message }}
-      </li>
-      {% endfor %}
-  </ul>
-  {% endif %}
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+  {% endfor %}
+{% endif %}
+
+ 
 <h2>Register</h2>
 
 <br/>
