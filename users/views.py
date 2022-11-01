@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from users.forms import RegisterForm
 
+
 def login_view(request):
     if request.method == "POST":
 
@@ -17,7 +18,7 @@ def login_view(request):
         # Check if authentication successful
         if user is not None:
             login(request, user)
-            return HttpResponseRedirect(reverse("users:index"))
+            return HttpResponseRedirect(reverse("pages:index"))
         else:
             return render(request, "users/login.html", {
                 "message": "Invalid username and/or password."
@@ -28,7 +29,7 @@ def login_view(request):
 
 def logout_view(request):
     logout(request)
-    return HttpResponseRedirect(reverse("users:index"))
+    return HttpResponseRedirect(reverse("pages:index"))
 
 
 def register_view(request):
@@ -41,14 +42,11 @@ def register_view(request):
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
             password = form.cleaned_data['password1']
-            user = authenticate(username=username,email=email, password=password)
-            login(request,user)
-            messages.success(request, 'Register was successfull')
+            user = authenticate(username=username, email=email, password=password)
+            login(request, user)
+            messages.success(request, ('Register was successfull'))
             return redirect("pages:index")
     else:
         form = RegisterForm()   
             
-    return render (request,"users/register.html", {'form': form} )
-    
-   
-    # TODO registration View
+    return render(request, "users/register.html", {'form': form})
