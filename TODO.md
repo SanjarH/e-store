@@ -20,20 +20,20 @@ This document represents a plan for a project. Feel free to add any information 
 - [X] remove_product_view(Sanjar - IN PRGORESS)
 - [ ] edit_product_view
 - [ ] product_detail_view
-- [ ] product_list_view
-- [ ] category_list_view
+- [x] product_list_view (Sanjar - IN PRGORESS)
+- [] category_list_view 
 ### Models
-- [ ] Product
-- [ ] Category
+- [x] Product(Sanjar - Done, will be change)
+- [x] Category(Sanjar - Done, will be change)
 ### Forms
 - [ ] ProductForm
 ### Templates
-- [ ] product.html
+- [x] product.html(Sanjar - IN PRGORESS)
 - [ ] 
 ### Static
 - [ ]
 ### Admin
-- [ ]
+- [x] Added changes(Sanjar)
 
 ## Create App 'cart'
 ### Views
