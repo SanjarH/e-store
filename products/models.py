@@ -14,8 +14,8 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    product_name = models.CharField(max_length=255)
-    description = models.TextField(blank=True, null=True)
+    name = models.CharField(max_length=255)
+    #description = models.TextField(blank=True, null=True)
     price = models.FloatField()
     created_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField()
